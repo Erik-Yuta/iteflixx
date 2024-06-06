@@ -1,0 +1,161 @@
+/* Resetando alguns estilos padrão */
+body, h1, h2, p, ul, li, a, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais para o corpo do documento */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414; /* Cor de fundo preta */
+    color: #ffffff; /* Cor do texto branca */
+    overflow-x: hidden; /* Previne rolagem horizontal */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #141414; /* Cor de fundo preta */
+    padding: 20px;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Estilos para a barra de navegação */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Limita a largura para evitar overflow */
+    margin: 0 auto; /* Centraliza a barra de navegação */
+}
+
+/* Estilos para o logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Estilos para a lista de navegação */
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Cor do texto branca */
+    font-weight: bold;
+}
+
+/* Estilos para o herói (imagem de destaque) */
+.hero {
+    height: 60vh; /* Mantém a altura original */
+    background: url('populares/imagens/Sco.jpg') no-repeat center center/cover; /* Garante que a imagem cubra o contêiner */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px; /* Ajustado para adicionar espaço após o cabeçalho */
+    max-width: 100%; /* Previne overflow */
+    overflow: hidden; /* Previne overflow */
+}
+
+/* Estilos para o conteúdo do herói */
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para os botões */
+button {
+    background-color: #e50914; /* Vermelho */
+    border: none;
+    padding: 10px 20px;
+    color: #ffffff; /* Cor do texto branca */
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #f40612; /* Vermelho mais escuro ao passar o mouse */
+}
+
+/* Estilos para a galeria de filmes */
+.gallery {
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 1200px; /* Limita a largura para evitar overflow */
+    margin: 0 auto; /* Centraliza a galeria */
+}
+
+.gallery h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para a grade de filmes */
+.movie-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Estilos para cada item de filme */
+.movie-item {
+    flex: 1 1 calc(20% - 20px);
+    max-width: calc(20% - 20px);
+    text-align: center;
+}
+
+/* Estilos para as imagens de filme */
+.movie-item img {
+    width: 100%;
+    height: 300px; /* Altura fixa para consistência */
+    object-fit: cover; /* Garante que a imagem cubra a área mantendo a proporção */
+    border-radius: 10px;
+}
+
+/* Estilos para o título do filme */
+.movie-title {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Estilos para os links de filme */
+.movie-item a {
+    text-decoration: none;
+    color: inherit; /* Herda a cor do texto do elemento pai */
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #141414; /* Cor de fundo preta */
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: relative; /* Ajustado para ser relativo em vez de fixo */
+    max-width: 1200px; /* Limita a largura para evitar overflow */
+    margin: 0 auto; /* Centraliza o rodapé */
+}
+
+
+
+
